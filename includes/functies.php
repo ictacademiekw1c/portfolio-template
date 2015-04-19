@@ -1,7 +1,7 @@
      
 <?php
     
-function printMenu() {
+function printMenu($currentPagina) {
 echo <<<MENU
    <ul class="vert-one">
           <li><a href="#" title="Portfolio menu" class="current">Home</a></li>

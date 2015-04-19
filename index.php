@@ -18,7 +18,7 @@
     <!-- einde contentgedeelte -->
     <div id="leftcol"> 
         <?php
-            printMenu();
+            printMenu('Home');
         ?>
     </div>
 </div>
