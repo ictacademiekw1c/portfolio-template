@@ -1,0 +1,95 @@
+html,body{margin:0;padding:0;text-align:center;}
+
+#pagewidth{width:960px;text-align:left;margin:0 auto;}
+
+
+#wrapper {
+    background-color:#400C90;
+}
+header{
+    position:relative;height:100px;background-color:#2049CF;width:100%;display:block;overflow:auto;
+}
+header h2 {
+    float: left;
+    padding-left: 20%;
+    color: #b6ff00;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+header p {
+    float: right;
+    padding-right: 2em;
+    font-size: 18px;
+    color: #0ff;   
+}
+
+header p a {
+    color: #ddd;
+}
+#leftcol{
+    width:20%;float:left;position:relative;background-color:#3C9F90;
+}
+
+#maincol{
+    background-color:#400C90;position:relative;width:80%;float:right;
+    color:  #fff;
+}
+
+#maincol div {
+    width:  90%;
+    padding: 1.5em;
+}
+
+#footer{
+    color:#ddd ;
+    background-color: #100F10; 
+    clear:both; 
+    display:block;
+}
+
+#footer p {
+    margin-top:  0;
+    padding: 2em;
+}
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}
+
+* html .clearfix{height:1%;}
+.clearfix{display:block;}
+
+@media print{
+    #leftcol {display:none;}
+    #twocols,#maincol {width:100%;float:none;}
+}
+
+//Het menu
+
+ul.vert-one li{
+    list-style-type: none;
+}
+
+ul.vert-one{margin:0;padding:0;list-style-type:none;display:block;
+font:bold 16px Helvetica, Verdana, Arial, sans-serif;line-height:165%;
+width:100%;}
+
+ul.vert-one li{margin:0;padding:0;border-top:1px solid #4D0000;
+border-bottom:1px solid #761A1A;}
+
+ul.vert-one li a{display:block;text-decoration:none;color:#fff;
+background:#600;padding:0 0 0 20px;width:180px;}
+
+ul.vert-one li a:hover{
+background:#900 url("../images/vert-one_arrow.gif") no-repeat 0 9px;}
+
+ul.vert-one li a.current,ul.vert-one li a.current:hover{
+background:#933 url("../images/vert-one_arrow.gif") no-repeat 0 9px;}
+
+
+label, input[type='submit'] {
+    display:  block;
+}
+
+input[type='number'] {
+    width: 3em;
+}
