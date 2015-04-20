@@ -4,14 +4,14 @@
 function printMenu($currentPagina='Home') {
 echo <<<MENU
    <ul class="vert-one">
-          <li><a href="#" title="Portfolio menu" class="current">Home</a></li>
-          <li><a href="#" title="Portfolio menu">Over mij</a></li>
-          <li><a href="#" title="Portfolio menu">Cijferlijst</a></li>
-          <li><a href="#" title="Portfolio menu">Contact</a></li>
-          <li><a href="#" title="Portfolio menu">Hobbies</a></li>
-          <li><a href="#" title="Portfolio menu">Werkervaring</a></li>
-          <li><a href="#" title="Portfolio menu">Studie</a></li>
-        </ul>
+          <li><a href="index.php" title="menuitems"  class="current">Home</a></li>
+          <li><a href="#" title="menuitems" >Over mij</a></li>
+          <li><a href="#" title="menuitems" >Cijferlijst</a></li>
+          <li><a href="contact.php" title="menuitems" >Contact</a></li>
+          <li><a href="#" title="menuitems" >Hobbies</a></li>
+          <li><a href="#" title="menuitems" >Werkervaring</a></li>
+          <li><a href="#" title="menuitems" ">Studie</a></li>
+   </ul>
 MENU;
 }
 
