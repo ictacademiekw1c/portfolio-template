@@ -7,4 +7,4 @@
 </head>
 <body>
 <div id="pagewidth">
-<header><h2>Portfolio van [je naam]</h2> <p><?php printGroet(); ?></p></header>
+<header><h2>Portfolio van Abu Saebu</h2> <p><?php printGroet(); ?></p></header>

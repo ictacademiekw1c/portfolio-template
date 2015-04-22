@@ -2,12 +2,13 @@
 <?php
     
 function printMenu($currentPagina='Home') {
+
 echo <<<MENU
    <ul class="vert-one">
-          <li><a href="index.php" title="menuitems"  class="current">Home</a></li>
+          <li><a href="index.php" title="menuitems">Home</a></li>
           <li><a href="#" title="menuitems" >Over mij</a></li>
           <li><a href="#" title="menuitems" >Cijferlijst</a></li>
-          <li><a href="contact.php" title="menuitems" >Contact</a></li>
+          <li><a href="contact.php" title="menuitems"  class="current">Contact</a></li>
           <li><a href="#" title="menuitems" >Hobbies</a></li>
           <li><a href="#" title="menuitems" >Werkervaring</a></li>
           <li><a href="#" title="menuitems" ">Studie</a></li>
