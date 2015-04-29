@@ -22,7 +22,9 @@ include('includes/functies.php');
      }
      if ($isGeldig==TRUE) {
          @session_start();
-         $_SESSION['gebruiker'] = $_POST['gebruikersnaam'];
+         //$_SESSION['gebruiker'] = $_POST['gebruikersnaam'];
+         setcookie('gebruiker',$_POST['gebruikersnaam'],time()+60*60*24*7);
+
          header('location: index.php');
      }
 

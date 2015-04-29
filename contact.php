@@ -4,13 +4,33 @@
 
     $msg = "Stel hier je vraag en we zullen je snel terugmailen";
   
+    //var_dump($_POST);
+
     //validatie van het contactformulier
     if (isset($_POST['verzend'])) {
         $msg = '';
 
+
+        if (empty($_POST['naam']) == TRUE) {
+            $msg .= "Naam is niet ingevuld";
+        }
+       if (empty($_POST['email']) == TRUE) {
+            $msg .= "<br>Email is niet ingevuld";
+        }
+       if (empty($_POST['vraag']) == TRUE) {
+            $msg .= "<br>Vraag is niet ingevuld";
+        }
+
+        if (strpos($_POST['email'],"@") == FALSE || strpos($_POST['email'],"@") == 0 ) {
+            $msg .= "<br>Ongeldig emailadres, geen @ of verkeerde positie"; 
+        }
+
+         if (strpos($_POST['email'],".") == FALSE) {
+            $msg .= "<br>Geen . in emailadres"; 
+        }
+
         if (empty($msg)) {
-            
-            //header('location: bedankt.php');
+            header('location: bedankt.php');
         }
     }
 

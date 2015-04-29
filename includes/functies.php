@@ -24,9 +24,20 @@ function printJaar() {
 
 function printGroet() {
 
-    @session_start();
+   // @session_start();
+
+   /*
     if (isset($_SESSION['gebruiker'])) {
         $gebruiker = $_SESSION['gebruiker']; 
+        $link = "<a href='loguit.php'>Uitloggen</a>";
+    } else {
+        $gebruiker = "anonieme bezoeker";
+        $link = "<a href='login.php'>Inloggen</a>";
+    }
+    */
+
+   if (isset($_COOKIE['gebruiker'])) {
+        $gebruiker = $_COOKIE['gebruiker']; 
         $link = "<a href='loguit.php'>Uitloggen</a>";
     } else {
         $gebruiker = "anonieme bezoeker";
